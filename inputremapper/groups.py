@@ -373,9 +373,6 @@ class _FindGroups(threading.Thread):
                 )
                 continue
 
-            if device.name == "Power Button":
-                continue
-
             device_type = classify(device)
 
             if device_type == DeviceType.CAMERA:
